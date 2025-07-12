@@ -5,7 +5,7 @@ const BlogPost = (props) => {
     <div className='pixel-font'>
         {props.coverImage && ( 
         <img 
-         src={`http://blogifyproject-env.eba-3snt3wpf.ap-south-1.elasticbeanstalk.com/${props.coverImage}`} 
+         src={`https://blogify-backend-tqwu.onrender.com/${props.coverImage}`} 
           // src={`http://blogifyproject-env.eba-3snt3wpf.ap-south-1.elasticbeanstalk.com/api/${props.coverImage.replace(/\\/g, '/')}`} 
           alt={props.title} 
           width="400" 
