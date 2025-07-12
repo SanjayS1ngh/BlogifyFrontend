@@ -1,0 +1,206 @@
+.blog-post {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  padding: 1rem 2rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+}
+
+.blog-post:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  transition: all 0.2s ease-in-out;
+}
+.auth{
+  display: flex;
+  gap: 12px;
+}
+.navbar-brand {
+  color: white;
+  text-decoration: none;
+  font-size: 1.8rem;
+  font-weight: 700;
+
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.navbar-link {
+  background-color: rgba(255, 255, 255, 0.2); /* A semi-transparent button */
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding: 0.6rem 1.2rem;
+  border-radius: 50px; /* A pill-shaped button */
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  transition: all 0.3s ease;
+}
+
+.navbar-link:hover {
+  background-color: rgba(255, 255, 255, 0.9); /* Almost opaque on hover */
+  color: #333; /* Text becomes dark on hover */
+  transform: translateY(-2px); /* Lift the button slightly */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navClass{
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  padding: 1rem 3rem; /* More horizontal padding */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  position: sticky; /* Makes the navbar stick to the top when you scroll */
+  top: 0;
+  z-index: 1000;
+}
+/* In src/App.css */
+
+/* --- Homepage Blog List Styles --- */
+.blog-list-container {
+  display: flex; /* This is the magic! Activates Flexbox */
+  flex-wrap: wrap; /* Allows items to wrap to the next line on smaller screens */
+  gap: 2rem; /* Adds space between the cards */
+  justify-content: center; /* Center the cards within the container */
+}
+
+/* --- Blog Post Card Styles --- */
+.blog-post {
+  background-image: url("../public/images/bg-img-container2.jpg");
+  border: 1px solid #696969;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,4);
+  flex-basis: 300px; /* Each card will try to be 300px wide */
+  display: flex; /* Use flexbox inside the card too! */
+  flex-direction: column; /* Stack items vertically (image, then title) */
+  transition: all 0.2s ease-in-out;
+}
+
+.blog-post:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-5px); /* Lift the card up on hover */
+}
+
+/* --- Styles for the components inside the card --- */
+.blog-post img {
+  width: 100%; /* Make the image fill the card width */
+  height: 200px; /* Give it a fixed height */
+  object-fit: cover; /* This makes the image cover the area without stretching */
+  border-top-left-radius: 8px;
+  border-top-right-radius: 8px;
+}
+
+.blog-post h2 {
+  font-size: 1.25rem;
+  margin: 0;
+  padding: 1rem;
+}
+
+/* === LAYOUT CONTAINER === */
+.container {
+  max-width: 1200px; /* Sets a maximum width for your content */
+  margin: 2rem auto; /* Centers the container on the page with space on top/bottom */
+  padding: 0 1rem;   /* Adds a little padding on the sides for smaller screens */
+}
+.edit-container{
+  border: 1 px solid red;
+  display: flex;
+  flex-direction: column;
+}
+/* === FORM STYLES === */
+.form-container {
+  max-width: 450px;
+  margin: 3rem auto;
+  padding: 2rem;
+  background-color: rgba(43, 41, 75, 0.7);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
+}
+
+.form-container h2 {
+  text-align: center;
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+
+.form-group {
+  margin-bottom: 1.5rem;
+}
+
+.form-group label {
+  display: block;
+  color: #cccccc;
+  margin-bottom: 0.5rem;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 5px;
+  color: white;
+  font-size: 1rem;
+  box-sizing: border-box; /* Important! */
+}
+
+.form-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-image: linear-gradient(to right, #6a11cb 0%, #2575fc 100%);
+  border: none;
+  border-radius: 5px;
+  color: white;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form-button:hover {
+  opacity: 0.9;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+.error-message {
+  color: #ff4d4d;
+  background-color: rgba(255, 0, 0, 0.1);
+  border: 1px solid #ff4d4d;
+  padding: 0.75rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+.usernameHome{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+}
+.author-name{
+  display: flex;
+  justify-content:left;
+  margin-left: 20px;
+}
+.author-name p{
+  font-size: 0.7rem;
+  font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.pixel-font h2{
+    font-family: 'VT323',monospace;
+    font-size: 32px;
+    text-shadow: 3px 3px green;
+ 
+}
+.blog-content{
+  white-space: pre-line;
+}
+.nav-blog-author{
+  font-family: 'VT323',monospace;;
+  font-size: 48px;
+  text-shadow: 3px 3px red;
+}
