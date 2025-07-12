@@ -71,6 +71,7 @@ localStorage.setItem("username", data.username);
         </div>
         {error && <p className="error-message">{error}</p>}
         <button type="submit" className="form-button">Login</button>
+        <p>kindly refresh the home page after login</p>
       </form>
     </div>
   );
