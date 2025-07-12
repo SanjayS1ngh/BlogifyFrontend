@@ -1,0 +1,51 @@
+*{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 18px;
+}
+.edit-container{
+    height: 100vh;
+    /* display: flex;
+    justify-content:left;
+    align-items: flex-start; */
+}
+.edit-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.edit-title{
+    height: 20px;
+    width: 120px;
+    background-color:rgb(234, 199, 241);
+    color: rgb(0, 0, 0);
+}
+.edit-content{
+    height:50vh;
+    background-color: rgb(234, 199, 241);
+}
+button{
+    width: 100px;
+    background-color: rgb(234, 199, 241);
+    border-radius: 2px;
+}
+.add-form{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.add-title{
+    height: 20px;
+    width: 120px;
+    background-color:rgb(234, 199, 241);
+    color: rgb(0, 0, 0);
+}
+.add-content{
+    height:50vh;
+    background-color: rgb(234, 199, 241);
+    color: rgb(0, 0, 0);
+}
+button:hover {
+  cursor: pointer;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  transform: translateY(-2px); /* Lift the card up on hover */
+}
